@@ -1,0 +1,5 @@
+google-genai>=1.21.0
+fastapi>=0.110
+uvicorn>=0.29
+PyYAML>=6.0
+Jinja2>=3.1

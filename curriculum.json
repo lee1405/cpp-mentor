@@ -1,0 +1,287 @@
+{
+  "title": "C & C++ Mastery — 90-Day Plan (1 to 1.5 hours per day)",
+  "phases": [
+    {"name": "C Fundamentals", "days": "1-24"},
+    {"name": "C++ Core", "days": "25-48"},
+    {"name": "Data Structures & Algorithms", "days": "49-70"},
+    {"name": "Systems, Tooling & Design", "days": "71-80"},
+    {"name": "Capstone & Interview Prep", "days": "81-90"}
+  ],
+  "days": [
+    {"day": 1, "phase": "C Fundamentals", "topics": [
+      {"id": "c-setup", "title": "Dev setup & first C program", "objectives": ["Install a C compiler and editor", "Write, compile and run hello world", "Understand the compile -> link -> run pipeline"], "exercise_ids": ["c-hello"], "quiz_count": 2}
+    ]},
+    {"day": 2, "phase": "C Fundamentals", "topics": [
+      {"id": "c-variables", "title": "Variables, data types & operators", "objectives": ["int, float, double, char, bool", "Declaration vs initialization", "Arithmetic and assignment operators", "Integer division and modulo"], "exercise_ids": ["c-sum"], "quiz_count": 2},
+      {"id": "c-type-casting", "title": "Type casting & size", "objectives": ["Implicit vs explicit cast", "sizeof operator", "Overflow and precision loss"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 3, "phase": "C Fundamentals", "topics": [
+      {"id": "c-io", "title": "Input & output (scanf/printf)", "objectives": ["Format specifiers %d %f %c %s", "Reading multiple values", "Common scanf pitfalls"], "exercise_ids": ["c-evenodd"], "quiz_count": 2}
+    ]},
+    {"day": 4, "phase": "C Fundamentals", "topics": [
+      {"id": "c-conditionals", "title": "if / else / switch", "objectives": ["Conditional expressions", "if-else-if chains", "switch and break", "Ternary operator"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 5, "phase": "C Fundamentals", "topics": [
+      {"id": "c-loops", "title": "for, while, do-while", "objectives": ["Loop anatomy: init / condition / increment", "When to use which loop", "Infinite loops and how to avoid them"], "exercise_ids": ["c-factorial"], "quiz_count": 2}
+    ]},
+    {"day": 6, "phase": "C Fundamentals", "topics": [
+      {"id": "c-nested-loops", "title": "Nested loops & break/continue", "objectives": ["Loops inside loops", "break vs continue", "Printing patterns"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 7, "phase": "C Fundamentals", "topics": [
+      {"id": "c-functions", "title": "Functions", "objectives": ["Declaration vs definition", "Parameters and return values", "The call stack", "Scope of variables"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 8, "phase": "C Fundamentals", "topics": [
+      {"id": "c-recursion", "title": "Recursion", "objectives": ["Base case vs recursive case", "Tracing a recursive call", "When recursion fits"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 9, "phase": "C Fundamentals", "topics": [
+      {"id": "c-arrays", "title": "Arrays", "objectives": ["1D arrays and indexing", "Array size and bounds", "Passing arrays to functions"], "exercise_ids": ["c-max3"], "quiz_count": 2}
+    ]},
+    {"day": 10, "phase": "C Fundamentals", "topics": [
+      {"id": "c-2d-arrays", "title": "2D arrays & array algorithms", "objectives": ["Matrix representation", "Row/column traversal", "Finding min/max in a 2D array"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 11, "phase": "C Fundamentals", "topics": [
+      {"id": "c-strings", "title": "Strings in C", "objectives": ["char arrays and the null terminator", "strlen, strcpy, strcmp", "Reading strings that contain spaces"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 12, "phase": "C Fundamentals", "topics": [
+      {"id": "c-string-practice", "title": "String manipulation practice", "objectives": ["Reverse a string", "Count words", "Check palindrome", "Build your own string functions"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 13, "phase": "C Fundamentals", "topics": [
+      {"id": "c-pointers-intro", "title": "Pointers — part 1", "objectives": ["Address-of & and dereference *", "Pointer declaration and assignment", "Pointers and variables"], "exercise_ids": ["ptr-swap"], "quiz_count": 2}
+    ]},
+    {"day": 14, "phase": "C Fundamentals", "topics": [
+      {"id": "c-pointer-arrays", "title": "Pointers & arrays — part 2", "objectives": ["Array name as pointer", "Pointer arithmetic", "Traversing arrays with pointers"], "exercise_ids": ["ptr-array"], "quiz_count": 2}
+    ]},
+    {"day": 15, "phase": "C Fundamentals", "topics": [
+      {"id": "c-pointer-functions", "title": "Pointers & functions — part 3", "objectives": ["Pass by value vs pass by pointer", "Returning pointers", "Pointer to pointer"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 16, "phase": "C Fundamentals", "topics": [
+      {"id": "c-dynamic-memory", "title": "Dynamic memory (malloc/free)", "objectives": ["Heap vs stack", "malloc / calloc", "free and why it matters"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 17, "phase": "C Fundamentals", "topics": [
+      {"id": "c-memory-leaks", "title": "Memory leaks & realloc", "objectives": ["realloc to resize", "Detecting leaks", "Dangling and double-free"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 18, "phase": "C Fundamentals", "topics": [
+      {"id": "c-structs", "title": "Structs", "objectives": ["Defining and using structs", "The dot operator", "Struct initialization"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 19, "phase": "C Fundamentals", "topics": [
+      {"id": "c-structs-functions", "title": "Structs with functions & arrays", "objectives": ["Arrays of structs", "Passing structs to functions", "Structs and pointers"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 20, "phase": "C Fundamentals", "topics": [
+      {"id": "c-files", "title": "File I/O", "objectives": ["fopen / fclose", "fread / fwrite", "Text vs binary files"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 21, "phase": "C Fundamentals", "topics": [
+      {"id": "c-files-practice", "title": "File I/O practice", "objectives": ["Read a file line by line", "Write structured data", "Error handling on files"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 22, "phase": "C Fundamentals", "topics": [
+      {"id": "c-review", "title": "C review & consolidation", "objectives": ["Re-do weak areas", "Explain pointers and memory in your own words"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+    {"day": 23, "phase": "C Fundamentals", "topics": [
+      {"id": "c-mini-project", "title": "Mini project: student records (build)", "objectives": ["Combine structs, arrays, files and functions", "Build a console CRUD app for students"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 24, "phase": "C Fundamentals", "topics": [
+      {"id": "c-mini-project-finish", "title": "Mini project: finish & present", "objectives": ["Polish the student records app", "Add input validation", "Explain your design choices"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+
+    {"day": 25, "phase": "C++ Core", "topics": [
+      {"id": "cpp-setup", "title": "C++ setup & first program", "objectives": ["Compile C++ with g++", "iostream and cout", "C++ vs C: what changes"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 26, "phase": "C++ Core", "topics": [
+      {"id": "cpp-classes", "title": "Classes & objects", "objectives": ["The class keyword", "Members: data and functions", "Access: public / private", "Creating objects"], "exercise_ids": ["cpp-class"], "quiz_count": 2}
+    ]},
+    {"day": 27, "phase": "C++ Core", "topics": [
+      {"id": "cpp-constructors", "title": "Constructors & destructors", "objectives": ["Default and parameterized constructors", "Initializer lists", "Destructors", "Object lifetime"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 28, "phase": "C++ Core", "topics": [
+      {"id": "cpp-this-overload", "title": "The this pointer & overloading", "objectives": ["What this is and when it appears", "Method overloading", "Default arguments"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 29, "phase": "C++ Core", "topics": [
+      {"id": "cpp-operator-overload", "title": "Operator overloading", "objectives": ["Overloading +, ==, <<", "Friend functions", "When it makes sense"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 30, "phase": "C++ Core", "topics": [
+      {"id": "cpp-inheritance", "title": "Inheritance", "objectives": ["Base and derived classes", "Inheritance modes", "Code reuse with inheritance"], "exercise_ids": ["cpp-inheritance"], "quiz_count": 2}
+    ]},
+    {"day": 31, "phase": "C++ Core", "topics": [
+      {"id": "cpp-polymorphism", "title": "Polymorphism & virtual functions", "objectives": ["The virtual keyword", "Dynamic dispatch", "Why it matters"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 32, "phase": "C++ Core", "topics": [
+      {"id": "cpp-abstract", "title": "Abstract classes & interfaces", "objectives": ["Pure virtual functions", "Abstract base classes", "Designing with interfaces"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 33, "phase": "C++ Core", "topics": [
+      {"id": "cpp-oop-review", "title": "C++ OOP review", "objectives": ["Consolidate classes, inheritance, polymorphism"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+    {"day": 34, "phase": "C++ Core", "topics": [
+      {"id": "stl-vectors", "title": "STL: vector", "objectives": ["Dynamic arrays", "push_back, size, indexing", "When vector beats raw arrays"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 35, "phase": "C++ Core", "topics": [
+      {"id": "stl-strings", "title": "STL: string", "objectives": ["std::string operations", "Concatenation and comparison", "string vs char array"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 36, "phase": "C++ Core", "topics": [
+      {"id": "stl-maps", "title": "STL: map & set", "objectives": ["Key-value storage", "Lookup and iteration", "set for uniqueness"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 37, "phase": "C++ Core", "topics": [
+      {"id": "stl-algorithms", "title": "STL: algorithms", "objectives": ["sort, min, max, find", "Range-based for loops", "Writing with <algorithm>"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 38, "phase": "C++ Core", "topics": [
+      {"id": "stl-iterators", "title": "STL: iterators & containers", "objectives": ["The iterator concept", "queue, stack, deque", "Choosing the right container"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 39, "phase": "C++ Core", "topics": [
+      {"id": "modern-references", "title": "Modern C++: references & auto", "objectives": ["References and pass-by-reference", "auto type deduction", "const correctness"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 40, "phase": "C++ Core", "topics": [
+      {"id": "modern-smart-pointers", "title": "Modern C++: smart pointers", "objectives": ["unique_ptr", "shared_ptr", "Why raw new/delete is dangerous"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 41, "phase": "C++ Core", "topics": [
+      {"id": "modern-lambdas", "title": "Modern C++: lambdas & move", "objectives": ["Lambda syntax", "Captures", "std::move and move semantics (concept)"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 42, "phase": "C++ Core", "topics": [
+      {"id": "cpp-review", "title": "C++ STL & modern review", "objectives": ["Consolidate containers and smart pointers"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+    {"day": 43, "phase": "C++ Core", "topics": [
+      {"id": "cpp-mini-project-design", "title": "Mini project: library manager (design)", "objectives": ["Requirements and data model", "Class design", "Plan the file structure"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 44, "phase": "C++ Core", "topics": [
+      {"id": "cpp-mini-project-build", "title": "Mini project: library manager (build)", "objectives": ["Implement add / list / borrow / return", "Use STL containers"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 45, "phase": "C++ Core", "topics": [
+      {"id": "cpp-mini-project-persist", "title": "Mini project: persistence", "objectives": ["Save and load the library to a file", "Handle serialization"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 46, "phase": "C++ Core", "topics": [
+      {"id": "cpp-mini-project-finish", "title": "Mini project: polish & present", "objectives": ["Input validation", "Clean, friendly output", "Explain your design"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 47, "phase": "C++ Core", "topics": [
+      {"id": "cpp-consolidation", "title": "C++ consolidation", "objectives": ["Revisit weak areas from the phase", "Extra practice"], "exercise_ids": [], "quiz_count": 3}
+    ]},
+    {"day": 48, "phase": "C++ Core", "topics": [
+      {"id": "phase2-assessment", "title": "Phase 2 assessment", "objectives": ["Mixed C++ quiz", "One timed exercise"], "exercise_ids": [], "quiz_count": 10}
+    ]},
+
+    {"day": 49, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-big-o", "title": "Big-O & complexity", "objectives": ["What Big-O means", "Common complexities", "Analyzing a loop"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 50, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-arrays-advanced", "title": "Arrays & strings (advanced)", "objectives": ["In-place operations", "Prefix sums", "String matching basics"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 51, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-two-pointers", "title": "Two pointers & sliding window", "objectives": ["The two-pointer pattern", "Fixed vs variable window", "Classic problems"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 52, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-linked-list", "title": "Linked lists (singly)", "objectives": ["Node and pointer structure", "Insert, delete, traverse", "Reversing a list"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 53, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-linked-list-adv", "title": "Linked lists (doubly & circular)", "objectives": ["Doubly linked list", "Circular list", "When to use which"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 54, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-stack", "title": "Stacks", "objectives": ["LIFO behavior", "Implement with array/list", "Applications: brackets, undo"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 55, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-queue", "title": "Queues", "objectives": ["FIFO behavior", "Implement a queue", "Circular queue"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 56, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-hash", "title": "Hash tables", "objectives": ["Hash function and buckets", "Collisions and resolution", "Average-case lookup"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 57, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-tree", "title": "Trees (binary)", "objectives": ["Tree terminology", "Binary tree traversal (pre/in/post)", "Height and depth"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 58, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-bst", "title": "Binary search trees", "objectives": ["BST property", "Insert and search", "In-order gives sorted order"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 59, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-heap", "title": "Heaps & priority queues", "objectives": ["Min-heap and max-heap", "Heap operations", "Priority queue use cases"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 60, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-graph-bfs", "title": "Graphs: representation & BFS", "objectives": ["Adjacency list vs matrix", "Breadth-first search", "Shortest path in unweighted graph"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 61, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-graph-dfs", "title": "Graphs: DFS", "objectives": ["Depth-first search", "Detecting cycles", "Topological sort (concept)"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 62, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-sorting-basic", "title": "Sorting: the basics", "objectives": ["Bubble, selection, insertion", "When each is used", "Stability"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 63, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-sorting-adv", "title": "Sorting: divide & conquer", "objectives": ["Merge sort", "Quick sort", "Comparison of the two"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 64, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-searching", "title": "Searching", "objectives": ["Linear vs binary search", "Binary search on answers", "Lower/upper bound"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 65, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-backtracking", "title": "Recursion & backtracking", "objectives": ["The backtracking pattern", "N-queens style problems", "Pruning"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 66, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-dp-intro", "title": "Dynamic programming (intro)", "objectives": ["Overlapping subproblems", "Memoization vs tabulation", "Fibonacci and climbing stairs"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 67, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-dp-classic", "title": "Dynamic programming (classic)", "objectives": ["0/1 knapsack", "Longest common subsequence", "Recognizing a DP problem"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 68, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-greedy", "title": "Greedy algorithms", "objectives": ["The greedy choice", "Activity selection", "When greedy works (and doesn't)"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 69, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "dsa-review", "title": "DSA review", "objectives": ["Consolidate all data structures", "Revisit weak topics"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+    {"day": 70, "phase": "Data Structures & Algorithms", "topics": [
+      {"id": "phase3-assessment", "title": "Phase 3 assessment", "objectives": ["Mixed DSA quiz", "Two timed problems"], "exercise_ids": [], "quiz_count": 10}
+    ]},
+
+    {"day": 71, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "sys-memory-model", "title": "Memory model deep dive", "objectives": ["Stack vs heap in detail", "Static and global memory", "Where variables live"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 72, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "sys-undefined-behavior", "title": "Segfaults & undefined behavior", "objectives": ["What a segfault is", "Common UB causes", "Reading a crash message"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 73, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "sys-threads", "title": "Multithreading (std::thread)", "objectives": ["What a thread is", "Creating and joining threads", "Shared state"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 74, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "sys-sync", "title": "Race conditions & mutexes", "objectives": ["What a race condition is", "std::mutex and lock_guard", "Protecting shared data"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 75, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "tool-cmake", "title": "CMake & multi-file projects", "objectives": ["What CMake is", "A minimal CMakeLists.txt", "Organizing a real project"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 76, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "tool-debugging", "title": "Debugging skills", "objectives": ["Using a debugger (gdb / VS Code)", "Breakpoints and watch", "printf debugging vs breakpoints"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 77, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "tool-testing", "title": "Unit testing concepts", "objectives": ["Why test", "A simple test structure", "Test-driven mindset"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 78, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "design-solid", "title": "OOP design principles (SOLID)", "objectives": ["Single responsibility", "Open/closed", "Dependency inversion (concept)"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 79, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "design-patterns", "title": "Design patterns (basics)", "objectives": ["Singleton", "Factory", "Observer (concept)"], "exercise_ids": [], "quiz_count": 2}
+    ]},
+    {"day": 80, "phase": "Systems, Tooling & Design", "topics": [
+      {"id": "phase4-review", "title": "Phase 4 review", "objectives": ["Consolidate systems and tooling", "Revisit weak areas"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+
+    {"day": 81, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "capstone-design", "title": "Capstone project (design)", "objectives": ["Pick a project of your own", "Requirements and data model", "Class and file design"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 82, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "capstone-build-1", "title": "Capstone project (build part 1)", "objectives": ["Core data structures", "Main functionality"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 83, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "capstone-build-2", "title": "Capstone project (build part 2)", "objectives": ["Secondary features", "Persistence"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 84, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "capstone-polish", "title": "Capstone project (polish)", "objectives": ["Input validation", "Edge cases", "Clean output"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 85, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "capstone-finish", "title": "Capstone project (finish & present)", "objectives": ["Write a short README", "Present what you built and why"], "exercise_ids": [], "quiz_count": 0}
+    ]},
+    {"day": 86, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "mock-interview-1", "title": "Mock interview 1: C/C++ fundamentals", "objectives": ["Explain pointers, memory, OOP out loud", "Answer 'why' questions, not just 'what'"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+    {"day": 87, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "mock-interview-2", "title": "Mock interview 2: DSA", "objectives": ["Solve a DSA problem under time pressure", "Explain your approach and complexity"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+    {"day": 88, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "mock-interview-3", "title": "Mock interview 3: live coding", "objectives": ["Debugging in front of the interviewer", "Communicating while coding"], "exercise_ids": [], "quiz_count": 5}
+    ]},
+    {"day": 89, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "final-review", "title": "Final review", "objectives": ["Full-course rapid review", "Consolidate the weakest areas"], "exercise_ids": [], "quiz_count": 10}
+    ]},
+    {"day": 90, "phase": "Capstone & Interview Prep", "topics": [
+      {"id": "graduation", "title": "Graduation: final assessment & next steps", "objectives": ["Final mixed assessment", "Where to go next: DSA, systems, or web"], "exercise_ids": [], "quiz_count": 10}
+    ]}
+  ]
+}

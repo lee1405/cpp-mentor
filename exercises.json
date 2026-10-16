@@ -1,0 +1,106 @@
+{
+  "exercises": [
+    {
+      "id": "c-hello",
+      "title": "Hello, World",
+      "language": "c",
+      "prompt": "Write a C program that prints exactly: Hello, World!\n(then a newline). It takes no input.",
+      "tests": [
+        {"name": "basic", "input": "", "expected": "Hello, World!"}
+      ],
+      "reference_solution": "#include <stdio.h>\nint main(void) {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}"
+    },
+    {
+      "id": "c-sum",
+      "title": "Sum of two integers",
+      "language": "c",
+      "prompt": "Read two integers a and b from stdin (space or newline separated) and print their sum on one line.",
+      "tests": [
+        {"name": "positive", "input": "3 5\n", "expected": "8"},
+        {"name": "negative", "input": "-2 7\n", "expected": "5"},
+        {"name": "zeros", "input": "0 0\n", "expected": "0"}
+      ],
+      "reference_solution": "#include <stdio.h>\nint main(void) {\n    int a, b;\n    scanf(\"%d %d\", &a, &b);\n    printf(\"%d\\n\", a + b);\n    return 0;\n}"
+    },
+    {
+      "id": "c-evenodd",
+      "title": "Even or odd",
+      "language": "c",
+      "prompt": "Read one integer n and print the word even if it is even, or odd if it is odd. Print exactly that word on one line.",
+      "tests": [
+        {"name": "even", "input": "4\n", "expected": "even"},
+        {"name": "odd", "input": "7\n", "expected": "odd"},
+        {"name": "zero", "input": "0\n", "expected": "even"}
+      ],
+      "reference_solution": "#include <stdio.h>\nint main(void) {\n    int n;\n    scanf(\"%d\", &n);\n    printf(\"%s\\n\", (n % 2 == 0) ? \"even\" : \"odd\");\n    return 0;\n}"
+    },
+    {
+      "id": "c-factorial",
+      "title": "Factorial",
+      "language": "c",
+      "prompt": "Read a non-negative integer n (0 <= n <= 12) and print n! (n factorial) on one line. Recall 0! = 1.",
+      "tests": [
+        {"name": "five", "input": "5\n", "expected": "120"},
+        {"name": "zero", "input": "0\n", "expected": "1"},
+        {"name": "three", "input": "3\n", "expected": "6"}
+      ],
+      "reference_solution": "#include <stdio.h>\nint main(void) {\n    int n;\n    scanf(\"%d\", &n);\n    long long f = 1;\n    for (int i = 2; i <= n; i++) f *= i;\n    printf(\"%lld\\n\", f);\n    return 0;\n}"
+    },
+    {
+      "id": "c-max3",
+      "title": "Maximum of three",
+      "language": "c",
+      "prompt": "Read three integers and print the largest of them on one line.",
+      "tests": [
+        {"name": "asc", "input": "1 2 3\n", "expected": "3"},
+        {"name": "mid", "input": "9 4 7\n", "expected": "9"},
+        {"name": "neg", "input": "-5 -2 -9\n", "expected": "-2"}
+      ],
+      "reference_solution": "#include <stdio.h>\nint main(void) {\n    int a, b, c;\n    scanf(\"%d %d %d\", &a, &b, &c);\n    int m = a;\n    if (b > m) m = b;\n    if (c > m) m = c;\n    printf(\"%d\\n\", m);\n    return 0;\n}"
+    },
+    {
+      "id": "ptr-swap",
+      "title": "Swap with pointers",
+      "language": "c",
+      "prompt": "Read two integers x and y. Write a function void swap(int *a, int *b) that swaps the values they point to. Use it to swap x and y, then print them space-separated on one line.",
+      "tests": [
+        {"name": "basic", "input": "3 5\n", "expected": "5 3"},
+        {"name": "big", "input": "10 20\n", "expected": "20 10"}
+      ],
+      "reference_solution": "#include <stdio.h>\nvoid swap(int *a, int *b) {\n    int t = *a;\n    *a = *b;\n    *b = t;\n}\nint main(void) {\n    int x, y;\n    scanf(\"%d %d\", &x, &y);\n    swap(&x, &y);\n    printf(\"%d %d\\n\", x, y);\n    return 0;\n}"
+    },
+    {
+      "id": "ptr-array",
+      "title": "Sum an array with pointers",
+      "language": "c",
+      "prompt": "Read an integer n, then read n integers. Store them in a dynamically allocated array (malloc). Compute their sum by traversing the array using pointer arithmetic (e.g. *(a+i)), print the sum on one line, and free the memory.",
+      "tests": [
+        {"name": "three", "input": "3\n1 2 3\n", "expected": "6"},
+        {"name": "four", "input": "4\n10 20 30 40\n", "expected": "100"}
+      ],
+      "reference_solution": "#include <stdio.h>\n#include <stdlib.h>\nint main(void) {\n    int n;\n    scanf(\"%d\", &n);\n    int *a = (int *)malloc(n * sizeof(int));\n    for (int i = 0; i < n; i++) scanf(\"%d\", a + i);\n    int s = 0;\n    for (int i = 0; i < n; i++) s += *(a + i);\n    printf(\"%d\\n\", s);\n    free(a);\n    return 0;\n}"
+    },
+    {
+      "id": "cpp-class",
+      "title": "A Counter class",
+      "language": "cpp",
+      "prompt": "Define a C++ class Counter with a private int member starting at 0, a public method inc() that adds 1, and a public method get() that returns the value. In main, read an integer n, create a Counter, call inc() n times, and print get() on one line.",
+      "tests": [
+        {"name": "five", "input": "5\n", "expected": "5"},
+        {"name": "zero", "input": "0\n", "expected": "0"}
+      ],
+      "reference_solution": "#include <iostream>\nusing namespace std;\nclass Counter {\n    int v = 0;\npublic:\n    void inc() { v++; }\n    int get() { return v; }\n};\nint main() {\n    int n;\n    cin >> n;\n    Counter c;\n    for (int i = 0; i < n; i++) c.inc();\n    cout << c.get() << \"\\n\";\n    return 0;\n}"
+    },
+    {
+      "id": "cpp-inheritance",
+      "title": "Inheritance: Animal and Dog",
+      "language": "cpp",
+      "prompt": "Define a base class Animal with a public virtual function string sound() const returning \"...\". Define a derived class Dog : public Animal that overrides sound() to return \"Woof\". In main, read a string name, create a Dog, and print exactly: Dog <name> says Woof on one line.",
+      "tests": [
+        {"name": "rex", "input": "Rex\n", "expected": "Dog Rex says Woof"},
+        {"name": "buddy", "input": "Buddy\n", "expected": "Dog Buddy says Woof"}
+      ],
+      "reference_solution": "#include <iostream>\n#include <string>\nusing namespace std;\nclass Animal {\npublic:\n    virtual string sound() const { return \"...\"; }\n};\nclass Dog : public Animal {\npublic:\n    string sound() const override { return \"Woof\"; }\n};\nint main() {\n    string name;\n    cin >> name;\n    Dog d;\n    cout << \"Dog \" << name << \" says \" << d.sound() << \"\\n\";\n    return 0;\n}"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+# ============================================================
+# cpp-mentor configuration
+# ============================================================
+
+learner:
+  name: "Fresher"
+
+gemini:
+  # The API key is read from this ENVIRONMENT VARIABLE (never store it here).
+  #   Windows:  setx GEMINI_API_KEY "AIza..."   (then reopen the terminal)
+  api_key_env: GEMINI_API_KEY
+  model: gemini-2.5-flash
+  temperature: 0.7
+
+compiler:
+  # On Windows the easiest option is MinGW-w64 (g++/gcc) from https://winlibs.com
+  c: gcc
+  cpp: g++
+  cflags: "-Wall -Wextra -std=c11"
+  cppflags: "-Wall -Wextra -std=c++17"
+  compile_timeout_seconds: 60
+  run_timeout_seconds: 10
+
+email:
+  # Daily report is emailed to you (the monitor).
+  # For Gmail: enable 2-Step Verification, then create an App Password
+  # (Google Account -> Security -> App passwords) and use it as the password.
+  enabled: true
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  username: "you@gmail.com"
+  password: "your-16-char-app-password"
+  from: "you@gmail.com"
+  to: "you@gmail.com"
+
+dashboard:
+  host: 127.0.0.1
+  port: 8000
+
+anti_cheat:
+  # Max compile/test attempts before the reference solution is shown
+  # (the exercise then counts as "passed_with_solution" = half credit).
+  max_attempts: 3
+  # Fewer attempted exercises per logged hour than this => flagged in report.
+  min_exercises_per_hour: 0.5
+  # Sessions starting before this hour (0-23) are flagged as late-night.
+  late_night_end: 5
+  # Submitted code more similar than this (0-1) to the reference solution
+  # is flagged as a possible copy.
+  similarity_threshold: 0.85
